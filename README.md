@@ -70,8 +70,7 @@
 <div class="container">
     <h1>Mi amor ❤️</h1>
 
-    <!-- FOTO DE USTEDES -->
-    <img src="foto.jpg" alt="Nosotros">
+    <img src="IMG_1356.jpg" alt="Nosotros">
 
     <p>
         No soy de hablar mucho ni de hacer cosas exageradas,
