@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background: #f6f3ef;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 520px;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    h1 { font-weight: normal; margin-bottom: 20px; }
+
+    img {
+        width: 180px;
+        border-radius: 8px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    button {
+        margin-top: 25px;
+        padding: 10px 22px;
+        border-radius: 5px;
+        border: 1px solid #333;
+        background: white;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #333;
+        color: white;
+    }
+
+    #respuesta {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #b76e79;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Mi amor ❤️</h1>
+
+    <img src="foto.jpg" alt="Nosotros">
+
+    <p>
+        No soy de hacer cosas exageradas,
+        pero quería hacer algo bonito para ti.
+    </p>
+
+    <p>
+        Desde que estás conmigo, todo se siente diferente…
+        más tranquilo, más alegre, más completo.
+    </p>
+
+    <p><strong>¿Quieres ser mi San Valentín? ❤️</strong></p>
+
+    <button id="btn">Sí quiero 💘</button>
+
+    <div id="respuesta"></div>
+</div>
+
+<script>
+let paso = 0;
+const btn = document.getElementById("btn");
+const respuesta = document.getElementById("respuesta");
+
+btn.addEventListener("click", function() {
+    if (paso === 0) {
+        respuesta.innerHTML = "¿Estás segura? 😏";
+        btn.innerHTML = "Sí, segura ❤️";
+        paso++;
+    } else {
+        respuesta.innerHTML = "Sabía que dirías que sí. Gracias por estar en mi vida, prometo seguir cuidándote siempre. ❤️";
+        btn.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
