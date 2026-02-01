@@ -97,7 +97,7 @@
 <script>
 function mostrarRespuesta() {
     document.getElementById("respuesta").innerHTML =
-    "Gracias por estar en mi vida. Prometo seguir cuidándote y haciéndote feliz cada día. ❤️";
+    "Lo siento jeje, no habia opcion de NO, Te amo, Gracias por estar en mi vida. Prometo seguir cuidándote y haciéndote feliz cada día. ❤️";
 }
 </script>
 
