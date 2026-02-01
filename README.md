@@ -94,11 +94,22 @@
     <div id="respuesta"></div>
 </div>
 
+
 <script>
-function mostrarRespuesta() {
-    document.getElementById("respuesta").innerHTML =
-    "Lo siento jeje, no habia opcion de NO, Te amo, Gracias por estar en mi vida. Prometo seguir cuidándote y haciéndote feliz cada día. ❤️";
-}
+let paso = 0;
+const btn = document.getElementById("btn");
+const respuesta = document.getElementById("respuesta");
+
+btn.addEventListener("click", function() {
+    if (paso === 0) {
+        respuesta.innerHTML = "¿Estás segura? 😏";
+        btn.innerHTML = "Sí, segura ❤️";
+        paso++;
+    } else {
+        respuesta.innerHTML = "Sabía que dirías que sí. Gracias por estar en mi vida, prometo seguir cuidándote siempre. ❤️";
+        btn.style.display = "none";
+    }
+});
 </script>
 
 </body>
